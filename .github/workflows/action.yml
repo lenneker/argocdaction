@@ -24,7 +24,7 @@ jobs:
                 version: 2.3.3
                 command: >-
                     version &&
-                    argo help
+                    argocd help
                 
 
             
