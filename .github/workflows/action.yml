@@ -8,7 +8,7 @@ jobs:
         strategy: 
             matrix:
              commands:
-                - version
+                - version --client
                 - help
         
         steps:
