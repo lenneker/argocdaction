@@ -6,17 +6,10 @@ jobs:
     tworuns:
         runs-on: ubuntu-latest
         steps:
-            
-            - uses: clowdhaus/argo-cd-action/@main
-              with:
-                  version: 2.3.3
-                  command: version
-                  options: --client
             - name: action with option in single line
               uses: clowdhaus/argo-cd-action/@main
               with:
                 version: 2.3.3
-                command: version --client
                 
             - name: locating argocd and running commands 
               run: |
