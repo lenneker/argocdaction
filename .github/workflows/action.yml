@@ -17,3 +17,10 @@ jobs:
               with:
                 version: 2.3.3
                 command: version --client
+
+            - name: same action with 2 commands
+              uses: clowdhaus/argo-cd-action/@main
+              with:
+                version: 2.3.3
+                command: version --client
+                command: app list
