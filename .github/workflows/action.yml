@@ -22,9 +22,9 @@ jobs:
               uses: clowdhaus/argo-cd-action/@main
               with:
                 version: 2.3.3
-                command: version
-                options: >
-                    --client ;
-                    /opt/hostedtoolcache/argocd/2.3.3/x64/argocd help
+                command: >-
+                    version &&
+                    help
+                
 
             
