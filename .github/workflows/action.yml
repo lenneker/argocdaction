@@ -5,11 +5,6 @@ on: push
 jobs:
     tworuns:
         runs-on: ubuntu-latest
-        strategy: 
-            matrix:
-             commands:
-                - version --client
-                - help
         steps:
             
             - uses: clowdhaus/argo-cd-action/@main
@@ -22,11 +17,20 @@ jobs:
               with:
                 version: 2.3.3
                 command: version --client
+            - name: locating argocd
+              run: |
+                which argocd
+                
 
-            - name: same action with 2 commands
-              uses: clowdhaus/argo-cd-action/@main
-              with:
-                version: 2.3.3
-                command: ${{ matrix.commands }}                
+
+
+
+
+
+#            - name: same action with 2 commands
+#              uses: clowdhaus/argo-cd-action/@main
+#              with:
+#                version: 2.3.3
+#                command: ${{ matrix.commands }}                
 
             
