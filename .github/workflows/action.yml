@@ -22,6 +22,6 @@ jobs:
               uses: clowdhaus/argo-cd-action/@main
               with:
                 version: 2.3.3
-                command:
-                  - "version --client"
+                command: |
+                  version --client
             
