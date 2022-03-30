@@ -23,7 +23,7 @@ jobs:
               with:
                 version: 2.3.3
                 command: |
-                  version --client ;
+                  app list ;
                   app list
 
             
