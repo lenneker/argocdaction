@@ -23,7 +23,7 @@ jobs:
               with:
                 version: 2.3.3
                 command: >
-                  help ;
+                  help \;
                   argocd version
 
             
