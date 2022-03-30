@@ -20,9 +20,11 @@ jobs:
                 
             - name: locating argocd and running commands 
               run: |
+                echo "Running ArgoCD"
                 which argocd
                 argocd version --client
                 argocd help
+                argocd version --client
                 
 
 
