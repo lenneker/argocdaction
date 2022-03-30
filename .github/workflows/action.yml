@@ -25,6 +25,6 @@ jobs:
                 command: version
                 options: |
                     --client ;
-                    argocd help
+                    /opt/hostedtoolcache/argocd/2.3.3/x64/argocd help
 
             
