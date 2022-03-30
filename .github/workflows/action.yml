@@ -4,13 +4,7 @@ on: push
 
 jobs:
     tworuns:
-        runs-on: ubuntu-latest
-        strategy: 
-            matrix:
-             commands:
-                - version --client
-                - help
-        
+        runs-on: ubuntu-latest        
         steps:
             
             - uses: clowdhaus/argo-cd-action/@main
@@ -28,7 +22,9 @@ jobs:
               uses: clowdhaus/argo-cd-action/@main
               with:
                 version: 2.3.3
-                command: ${{ matrix.commands }}
+                command: >-
+                    version --client &&
+                    help
                 
 
             
