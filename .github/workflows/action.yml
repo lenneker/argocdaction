@@ -23,7 +23,7 @@ jobs:
               with:
                 version: 2.3.3
                 command: |
-                  app help ;
+                  help ;
                   app list
 
             
