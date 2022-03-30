@@ -17,7 +17,8 @@ jobs:
               with:
                 version: 2.3.3
                 command: version --client
-            - name: locating argocd
+                
+            - name: locating argocd and running commands 
               run: |
                 which argocd
                 argocd version --client
