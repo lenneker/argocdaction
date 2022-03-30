@@ -25,6 +25,6 @@ jobs:
                 command: version
                 options: >
                     --client ;
-                    help
+                    argocd help
 
             
